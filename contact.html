@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anfrage – HR Zürich</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anfrage | von Flüe Human Resources</title>
+<link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
-    <header class="navbar">
-        <div class="logo"><img src="assets/hrlogo.png" alt="HR Zürich Logo"></div>
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">Über uns</a>
-            <a href="services.html" class="nav-link">Dienstleistungen</a>
-            <a href="hours-location.html" class="nav-link">Öffnungszeiten & Standort</a>
-            <a href="contact.html" class="nav-link active">Anfrage</a>
-        </nav>
-    </header>
+<header class="navbar">
+<div class="logo-text">von Flüe <span>Human Resources</span></div>
+<nav>
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">Über uns</a>
+<a href="services.html" class="nav-link">Dienstleistungen</a>
+<a href="hours-location.html" class="nav-link">Standort</a>
+<a href="contact.html" class="nav-link active">Anfrage</a>
+</nav>
+</header>
 
-    <section class="contact-section">
-        <h1>Kontaktieren Sie uns</h1>
-        <form action="https://formspree.io/f/xjgkpqae" method="POST">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
+<section class="contact-section">
+<h1>Unverbindliche Anfrage</h1>
 
-            <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" required>
+<form action="https://formspree.io/f/xjgkpqae" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="E-Mail" required>
+<textarea name="message" rows="6" placeholder="Ihre Anfrage" required></textarea>
+<button type="submit">Absenden</button>
+</form>
+</section>
 
-            <label for="message">Nachricht</label>
-            <textarea name="message" id="message" rows="6" required></textarea>
-
-            <button type="submit">Absenden</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 HR Zürich – Alle Rechte vorbehalten.</p>
-    </footer>
+<footer class="footer">
+<p>© 2026 von Flüe Human Resources – Zürich</p>
+</footer>
 </body>
 </html>
