@@ -401,3 +401,16 @@ section h1 {
 h1, h2, h3 {
     color: #ffffff;
 }
+/* === SERVICES GRID === */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
